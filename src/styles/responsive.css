@@ -1,0 +1,117 @@
+.posts {
+    display: grid;
+    grid-row-gap: 16px;
+}
+
+@media screen and (max-width: 399px) {
+    .nav {
+        z-index: 10;
+        background-color: #608cdd;
+        width: 300px;
+        position: absolute;
+
+        -webkit-transform: translate(-300px, 0);
+        transform: translate(-300px, 0);
+
+        transition: transform 0.3s ease;
+    }
+
+    .top-bar {
+        grid-template-columns: 90% 10%;
+    }
+
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .nav__item {
+        display: list-item;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+
+@media screen and (min-width: 400px) {
+    .header__menu {
+        display: none;
+    }
+
+    .nav {
+        margin: auto;
+    }
+    .nav__item {
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    #resto .resto__content {
+        grid-template-columns: 1fr;
+    }
+
+    .jumbotron {
+        background-image: url("/images/jumbotron-small.jpg");
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .nav__item {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .resto-item__content {
+        padding: 16px 32px 32px 32px;
+    }
+
+    .resto-item__title {
+        font-size: 18px;
+    }
+
+    .resto-item__description {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #restaurants {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 16px;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    .nav__list {
+        max-width: 800px;
+        margin: 0 auto;
+
+    }
+    .nav__item {
+        font-size: 20px;
+    }
+
+    .jumbotron {
+        background-image: url("/images/jumbotron-large.jpg");
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #restaurants {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+    }
+}

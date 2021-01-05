@@ -1,0 +1,17 @@
+{
+  "name": "Cataresto Lite",
+  "short_name": "Cataresto",
+  "description": "Your Culinary Resource",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#d84315",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
